@@ -84,7 +84,7 @@ window.addEventListener('load', () => {
                         }).then((result) => {
                           if (result.isConfirmed) {
                               list_el.removeChild(task_el);
-                            Swal.fire('Done', '', 'success')
+                            Swal.fire({title: "Done.",text: "Deleted..",icon:"success",timer: 1000,width: 250})
                           } else if (result.isDenied) {
                             Swal.fire('Not Remvoed', '', 'info')
                           }
