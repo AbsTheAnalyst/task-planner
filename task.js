@@ -86,7 +86,7 @@ window.addEventListener('load', () => {
                               list_el.removeChild(task_el);
                               Swal.fire({title: "Done.",text: "Deleted..",icon:"success",timer: 1000,width: 250})
                           } else if (result.isDenied) {
-				Swal.fire({title: "Not Removed",text: "Deleted..",icon:"info",timer: 1000, width: 250})
+			      Swal.fire({title: "Not Removed",icon:"info",timer: 1000,width: 250})
                             	
                           }
                         })
